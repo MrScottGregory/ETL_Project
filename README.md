@@ -22,9 +22,9 @@ https://data.ny.gov/api/views/w4pv-hbkt/files/AUsdC2Y0iEymGyebFASIjDxZ7irrm1-_yS
 * Eliminated any rows other than those for vehicles (down to 10 million rows)
 * Dropped columns not relevant to our analysis
 * Aggregated and renamed the “body type” values used DMV body type PDF to decode
-** In excel created a list of body types and identified those that should be combined and renamed
-** Final list of body type names and combinations were then used to rename the types in pandas.  
-** The same types were also then used for collision dataframe transformation so we could use to join the tables.
+* * In excel created a list of body types and identified those that should be combined and renamed
+* * Final list of body type names and combinations were then used to rename the types in pandas.  
+* * The same types were also then used for collision dataframe transformation so we could use to join the tables.
 * Eliminated any rows other than those for NYC counties (down to 2 million rows)
 * Renamed columns in snake case
 * Note: Throughout transformation, we had to troubleshoot trailing space errors in column values.  Ultimately we used .str.strip() to eliminate this issue where necessary.
